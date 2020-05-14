@@ -1,0 +1,32 @@
+@import "./src/app";
+.button {
+  width: 750px;
+  height: 50px;
+  border-radius: 50px;
+  //border-bottom: 2px solid red;
+  border:none;
+  font-size: 20px;
+  color: #fff;
+  background: blue;
+}
+@mixin setBorder ($color,$width){
+  border:1px $color solid;
+  width: $width;
+}
+.my-box {
+  @include setBorder(red,500px);
+  font-size: $titleFz;
+  background: $bgColor;
+}
+
+.taro-img {
+  width: 100%;
+  height: auto;
+}
+.get-btn {
+  font-size: $titleFz;
+  color: #999999;
+}
+.swiper-box{
+  margin-bottom: 10px;
+}
